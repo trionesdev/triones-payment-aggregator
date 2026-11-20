@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.trionesdev.payment</groupId>
-    <artifactId>aggregate-payment</artifactId>
+    <artifactId>payment-aggregator</artifactId>
     <version>0.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Triones:AggregatePayment</name>
+    <name>Triones:PaymentAggregator</name>
     <modules>
-        <module>aggregate-payment-dependencies</module>
-        <module>aggregate-payments</module>
+        <module>payment-aggregator-dependencies</module>
+        <module>payment-aggregators</module>
     </modules>
 
     <properties>
