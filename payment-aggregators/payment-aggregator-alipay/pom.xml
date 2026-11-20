@@ -20,7 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>com.trionesdev.payment</groupId>
-            <artifactId>aggregate-payment-core</artifactId>
+            <artifactId>payment-aggregator-core</artifactId>
         </dependency>
         <dependency>
             <groupId>com.trionesdev.payment</groupId>

@@ -1,6 +1,6 @@
 package com.trionesdev.payment.aggregator.shared.model
 
-import com.trionesdev.payment.aggregate.shared.enums.Scene
+import com.trionesdev.payment.aggregator.shared.enums.Scene
 import java.time.Instant
 
 /**

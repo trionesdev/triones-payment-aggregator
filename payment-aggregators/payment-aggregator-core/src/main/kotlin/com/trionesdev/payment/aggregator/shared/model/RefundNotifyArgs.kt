@@ -1,6 +1,6 @@
 package com.trionesdev.payment.aggregator.shared.model
 
-import com.trionesdev.payment.aggregate.shared.enums.RefundStatus
+import com.trionesdev.payment.aggregator.shared.enums.RefundStatus
 import java.time.Instant
 
 class RefundNotifyArgs {

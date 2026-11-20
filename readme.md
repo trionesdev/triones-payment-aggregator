@@ -148,7 +148,7 @@ public final class PaymentChannels {
 
 ### 2. 发起微信 Native 支付
 
-以下方法接收上一步创建的微信渠道，返回用于生成支付二维码的链接。示例基于重命名后的包结构，当前源码构建前还需处理下方列出的重命名遗留问题。
+以下方法接收上一步创建的微信渠道，返回用于生成支付二维码的链接。
 
 ```java
 import com.trionesdev.payment.aggregator.PaymentChannel;
@@ -223,12 +223,7 @@ mvn clean install
 
 ### 当前源码注意事项
 
-当前工作区正在由 `aggregate-payment` / `payment.aggregate` 迁移至 `payment-aggregator` / `payment.aggregator`。构建和运行示例前，需要完成以下引用迁移：
-
-- 支付宝模块 `pom.xml` 仍引用 `aggregate-payment-core`，应与新核心模块坐标 `payment-aggregator-core` 对齐。
-- `PaymentNotifyCallback`、`CreateOrderRequest`、`RefundNotifyArgs`、`TransferNotifyArgs` 中仍有 `com.trionesdev.payment.aggregate` 的旧包导入。
-
-此外，当前 `CloseOrderRequest.Builder.outTradeNo()` 错误地赋值给了 `merchantId`；调用关单接口时可先使用 `new CloseOrderRequest()` 和属性 setter 设置字段。`CancelTransferRequest.Builder` 尚未提供 `outBillNo()`，微信取消转账时需通过 setter 设置商户转账单号。
+当前 `CloseOrderRequest.Builder.outTradeNo()` 错误地赋值给了 `merchantId`；调用关单接口时可先使用 `new CloseOrderRequest()` 和属性 setter 设置字段。`CancelTransferRequest.Builder` 尚未提供 `outBillNo()`，微信取消转账时需通过 setter 设置商户转账单号。
 
 ## 扩展支付渠道
 

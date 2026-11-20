@@ -1,6 +1,6 @@
 package com.trionesdev.payment.aggregator.shared.model
 
-import com.trionesdev.payment.aggregate.shared.enums.TransferStatus
+import com.trionesdev.payment.aggregator.shared.enums.TransferStatus
 
 class TransferNotifyArgs {
     /**

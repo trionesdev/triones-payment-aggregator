@@ -4,7 +4,7 @@
 
 提供 `com.trionesdev.payment.aggregator.alipay.AlipayChannel`，基于底层 `com.trionesdev.payment.alipay.v3.Alipay` 客户端适配统一支付接口。
 
-仓库配置、BOM、公共模型和构建注意事项见[项目 README](../../readme.md)。当前模块仍有重命名遗留依赖，构建前需先按主 README 完成引用迁移。
+仓库配置、BOM、公共模型和构建注意事项见[项目 README](../../readme.md)。
 
 ## 初始化
 
